@@ -1,21 +1,46 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 
-//agregue la varible amigos para crear el ray
+//Creamos el array para almacenar los nombres
 let amigos = [];
 
 // esta funcion es para agregarle nombre a la array
 
-function introducirAmigo () {
-    const input = document.getElementById("input-nombre");
-    const nombre = input. value. trim();
+function agregarAmigo () {
+    const input = document.getElementById("amigo");
+    const nombre = input.value.trim();
 
     if (nombre === "") {
-        alert("Por favor, ingresa un nombre valido.");
+        alert("Por favor, ingresa un nombre válido.");
         return;
     }
 
     amigos.push(nombre); // Aqui se agrega el nombre al array
-    mostrarLista();
-    input. value = "";
+    mostrarLista();      // Actualizar la lista en pantalla
+    input. value = "";   // Limpiar el campo
 } 
 
+// Función para mostrar la lista de amigos en el HTML
+function mostrarLista() {
+    const lista = document.getElementById("listaAmigos");
+    lista.innerHTML = "";  // Limpiar lista antes de agregar
+
+    for (let i = 0; i < amigos.length; i++) {
+        const li = document.createElement ("li");
+        li.textContent = amigos[i];
+        lista.appendChild(li);
+    }
+}
+
+// Función para sortear un amigo secreto
+function sortearAmigo() {
+    if (amigos.length === 0) {
+    alerta ("Agregar al menos un amigo antes de sortear.");
+    return;
+    }
+}
+
+const indice = Math.floor(Math.random() * amigos.length);
+const amigoSecreto = amigos[indice];
+
+const resultado = document.getElementById("resultado");
+resultado.innerHTML = `<li> 🎉 Tu amigo secreto es: <strong>${amigoSecreto}</strong></li>`;
