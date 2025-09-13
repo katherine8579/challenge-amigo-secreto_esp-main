@@ -41,11 +41,14 @@ function sortearAmigo() {
  // Generar indice aleatorio 
  const indice = Math.floor(Math.random() * amigos.length);
 
- // Obtener el nombre
- const amigoSecreto = amigos[indice];
+ // Obtener y eliminar el nombre sorteado del array
+ const amigoSecreto = amigos.splice(indice, 1)[0];
 
  //Mostrar resultado en el HTML
  const resultado = document.getElementById("resultado");
  resultado.innerHTML = `<li> 🎉 Tu amigo secreto es: <strong>${amigoSecreto}</strong></li>`;
+
+ // Actualizar la lista de amigos para reflejar los que quedan
+ mostrarLista();
 
 }
