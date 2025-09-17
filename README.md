@@ -19,7 +19,23 @@ Aplicar conceptos fundamentales de programación como **funciones**, **listas (a
 - **CSS3**: estilos visuales
 - **JavaScript**: lógica del juego
 
-## 📂 Estructura del proyecto
+## 🚀 Cómo ejecutar el proyecto  
+1. Clona este repositorio en tu computadora:  
+   ```bash
+   git clone https://github.com/tuusuario/amigo-secreto.git
+Abre el archivo index.html en tu navegador.
+
+¡Listo! Ya puedes empezar a agregar nombres y realizar el sorteo.
+
+##⚠️ Posibles problemas y soluciones
+
+| Problema                             | Posible causa                                       | Solución                                                        |
+| ------------------------------------ | --------------------------------------------------- | --------------------------------------------------------------- |
+| El botón "Sortear Amigo" no funciona | No hay amigos en la lista                           | Asegúrate de agregar al menos un nombre antes de sortear        |
+| Los nombres se repiten en el sorteo  | No se eliminan del arreglo después de ser sorteados | Implementar `splice()` o lógica para remover el nombre sorteado |
+| No aparecen los nombres en la lista  | El DOM no se actualiza correctamente                | Revisa el uso de `document.getElementById()` y `innerHTML`      |
+| La página no carga bien              | Se abrió un archivo diferente a `index.html`        | Abre directamente `index.html` en el navegador                  |
+
 
 ## 👩‍💻 Autora
 
