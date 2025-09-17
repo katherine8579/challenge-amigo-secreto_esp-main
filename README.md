@@ -22,12 +22,12 @@ Aplicar conceptos fundamentales de programación como **funciones**, **listas (a
 ## 🚀 Cómo ejecutar el proyecto  
 1. Clona este repositorio en tu computadora:  
    ```bash
-   git clone https://github.com/tuusuario/amigo-secreto.git
-Abre el archivo index.html en tu navegador.
+ (https://github.com/katherine8579/challenge-amigo-secreto_esp-main.git)
+2. Abre el archivo index.html en tu navegador.
 
-¡Listo! Ya puedes empezar a agregar nombres y realizar el sorteo.
+3. ¡Listo! Ya puedes empezar a agregar nombres y realizar el sorteo.
 
-##⚠️ Posibles problemas y soluciones
+⚠️ Posibles problemas y soluciones
 
 | Problema                             | Posible causa                                       | Solución                                                        |
 | ------------------------------------ | --------------------------------------------------- | --------------------------------------------------------------- |
